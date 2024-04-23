@@ -1,29 +1,29 @@
 # # #ATM PROJECT _______________________________________________________
 
 
-# # account={
-# #     "holdername":"xxxxxx",
-# #     "balance":10000
-# # }
-# # pin=int(input("Enter your six digit pin number:"))
-# # if (pin>100000):
-# #   process=input("choose the withdraw or deposit or balancecheck:")
-# #   if (process=="withdraw" or process=="WITHDRAW"):
-# #        withdrawmoney=int(input("enter your withdraw amount:"))
-# #        account['balance']-=withdrawmoney
-# #        print(withdrawmoney,"is withdraw","balance:",account['balance'])
-# #        print("please wait..collect your money")
-# #   elif(process=="deposit" or process=="DEPOSIT"):
-# #       depositamt=int(input("enter your deposit amount:"))
-# #       account['balance']+=depositamt
-# #       print(depositamt,"is deposited.","balance is ",account['balance'])
-# #       print("amount deposited")
-# #   elif(process=="balancecheck" or process=="BALANCECHECK"):
-# #       print("balance:",account['balance'])
-# #   else:
-# #       print("choose the correct option") 
-# # else:
-# #      print("please enter your correct pin number")
+# account={
+#     "holdername":"xxxxxx",
+#     "balance":10000
+# }
+# pin=int(input("Enter your six digit pin number:"))
+# if (pin>10000):
+#   process=input("choose the withdraw or deposit or balancecheck:")
+#   if (process=="withdraw" or process=="WITHDRAW"):
+#        withdrawmoney=int(input("enter your withdraw amount:"))
+#        account['balance']-=withdrawmoney
+#        print(withdrawmoney,"is withdraw","balance:",account['balance'])
+#        print("please wait..collect your money")
+#   elif(process=="deposit" or process=="DEPOSIT"):
+#       depositamt=int(input("enter your deposit amount:"))
+#       account['balance']+=depositamt
+#       print(depositamt,"is deposited.","balance is ",account['balance'])
+#       print("amount deposited")
+#   elif(process=="balancecheck" or process=="BALANCECHECK"):
+#       print("balance:",account['balance'])
+#   else:
+#       print("choose the correct option") 
+# else:
+#      print("please enter your correct pin number")
 
 
 
@@ -88,3 +88,39 @@
 
 # _______________________Bus Reservation____________________
 
+
+#__________colours sorting_____________
+
+# def c_function():
+#     i=1
+#     list=[]
+
+#     for i in range(1,5):
+#         colours=input('enter colours:')
+#         list.append(colours)
+#     print('before sorting',list)
+#     list.sort()
+#     print('after sorting',list)
+# c_function()
+
+
+
+#_______count of alphabets______
+
+# aa=input('paragraph')
+# def my_function():
+#     a=0
+#     lower=0
+#     upper=0
+#     indent=0
+#     for a in aa:
+#         if(a.isupper()):
+#          upper+=1
+#         elif(a.islower()):
+#          lower+=1
+#         else:
+#          indent+=1
+#     print(upper)
+#     print(lower)
+#     print(indent)
+# my_function()
