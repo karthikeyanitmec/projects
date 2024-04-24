@@ -94,7 +94,7 @@
 #encapsulation_____________
 
 # class bank:
-#     value=500000
+#     value=500000    #private variable
 #     def customer1(self):
 #         print('karthi','\n','10000','\n','salem')
 #     def customer2(self):
@@ -108,7 +108,7 @@
 # class bank:
 #     def __init__(self):
 #         self.__value=100
-#     def __sam(self):
+    # def __sam(self):     #private class usind double under_score
 #         # print('value',self.__value)
 
 #         print("name:sam")
@@ -116,7 +116,7 @@
 #         print("balance:1000")
 #         print("place:salem")
 #         print("\n")
-#     def __karthi(self):
+#     def __karthi(self):      #private class double under_score
 #         print("name:karthi")
 #         print("a/c:12234567")
 #         print("balance:20000")
@@ -130,7 +130,7 @@
 #abstraction______________
 
 
-# from abc import ABC
+# from abc import ABC    # default syntax for abstraction
 # class bus(ABC):
 #     def volvo(self):
 #         print('hello')
