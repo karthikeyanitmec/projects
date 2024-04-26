@@ -98,30 +98,38 @@
 # c.presults()
 
 
-#multiple inheritance__________________-
+#multiple inheritance__________________
 
-# class skills():
-#     def details(self,name="",exp=0,pov=0):
-#         self.n=name
+
+# class SkillSet:
+#     def __init__(self,name="",exp=0,poc=0):
+#         self.skill=name
 #         self.exp=exp
-#         self.poc=pov
-#     def print(self):
-#         return self.n+" "+str(self.exp)+" "+str(self.poc)
-# class additional():
-#     def info(self,email="",skill=0):
-#         self.em=email
-#         self.sk=skill
-#     def __str__(self):
-#         return self.em+" "+str(self.sk)
-# class checking(skills,additional):
-#     def __init__(self,user,id=0,e=0,p=0):
-#         super(checking,self),__init__(id,user,e,p)
-#     def __str__(self):
-#         return super(checking,self),__str__()+""+self.view()
+#         self.poc=poc
+#     def view(self):
+#         return self.skill+" "+str(self.exp)+" "+str(self.poc)
 
-# p=checking("karthi",5,23)
-# print(p)
 
+# class Personal:
+#     def __init__(self,name,qual="",con=0,mail=""):
+#         self.name=name
+#         self.qualification=qual
+#         self.contact=con
+#         self.mail=mail
+#     def __str__(self):
+#         return self.name+" "+self.qualification+" "+str(self.contact)+" "+self.mail
+
+# class Profile(Personal,SkillSet):
+#     def __init__(self,user="",q="",c=0,m="",s="",e=0,p=0):
+#         super(Profile, self).__init__(user,q,c,m)
+#         self.skill=s;self.exp=e;self.poc=p
+#     # def __str__(self):
+#     #     return super(Profile, self).__str__()+" "+self.view()
+
+# pro=Profile("saran","IT",78458956,"saran@gmail.com","python Backend",5,2)
+# pro1=Profile("karthi","It",785522,"karthi@gmail.com","Python and Java")
+# print(pro)
+# print(pro1)
 
 #encapsulation______________
 
@@ -147,5 +155,150 @@
 # m.setram(8)
 # m.setprice(10000)
 # print(m.getmodel(),m.getram(),m.getprice())
+
+
+#hybrid inheritance_________________
+
+# class college:
+#     def name(self,totals,total):
+#         self.staffs=int(input("sjc"))
+#         self.students=int(input("sjcssd"))
+
+# class staff(college):
+#     def totalstaffs(self):
+
+
+# class student(college):
+#     def total(self):
+#         self.name()
+
+# class salary(staff,student):
+#     def calculate(self,add=""):
+#         self.add=str(self.totalstaffs)+str(self.total)
+
+# o=salary()
+# o.calculate()
+
+
+
+# example 2
+
+# class operators:
+#     def inputs(self):
+#         self.a=int(input('value a'))
+#         self.b=int(input('value b'))
+
+# class addition(operators):
+#     def add(self):
+#         self.inputs()
+#         total=self.a+self.b
+#         print("addition",total)
+
+
+# class subraction(operators):
+#     def sub(self):
+#         self.inputs()
+#         total=self.a-self.b
+#         print("subtraction",total)
+
+# class final(addition,subraction):
+#     def results(self):
+#         self.add()
+#         self.sub()
+
+# r=final()
+# r.results()
+
+
+#hierarical inheritance_____
+
+
+# from array import *
+
+# class stocks:
+#     products=array('i')
+#     def pro(self):
+#         print('products are',self.products)
+
+# class pothys(stocks):
+#     def __init__(self,store):
+#         self.products=array('i')
+#         self.products.extend(store)
+    
+#     def search(self):
+#         budget=int(input('enter your search'))
+#         for x in self.products:
+#             if x<=budget:
+#                 print(x)
+# class reliance(stocks):
+#     def __init__(self,st):
+#         self.products=array('i')
+#         self.products.extend(st)
+#     def print(self,start,stop):
+#         print(self.products[start:stop])
+# p=pothys([5,4,3,2])
+# r=reliance([233,123,234,23,23])
+
+# p.search()
+# r.print(0,3)
+# r.pro()
+# p.pro()
+
+
+# abstraction______
+
+# from abc import *
+
+# class falcon(ABC):
+#     def __init__(self):
+#         self.mine={43,12,4,5,6,666,77,78}
+#     def heythere(self):
+#         pass
+
+# class passed(falcon):
+#     def there(self):
+#         print(self.mine)
+
+
+# p=passed()
+# p.there()
+
+
+#constructors_________
+
+# class Account:
+#     def __init__(self,name="",bal=0,num=0):
+#         self.__holder=name
+#         self.__balance=bal
+#         self.__accno=num
+    
+#     def __add__(self,other):
+#         self.__balance+=other
+#         print(other,'credited',self.__balance)
+#     def __sub__(self,other):
+#         if self.__balance>=other:
+#             self.__balance=other
+#         else:
+#             print(self.__balance,'insufficient balance')
+
+#     def __str__(self):
+#         return self.__holder+" "+self.__balance+""+self.__accno
+    
+#     def setholder(self,name=""):self.__holder=name
+#     def getholder(self):return self.__holder
+#     def setbalance(self,bal=0):self.__balance=bal
+#     def getbalance(self):return self.__balance
+#     def setaccno(self,num=0):self.__accno=num
+#     def getaccno(self):return self.__accno
+
+# a=Account()
+# a.setaccno(12344)
+# print(a.getaccno())
+# a.setholder("karthi")
+# print(a.getholder())
+# a.setbalance(1000)
+# print(a.getbalance())
+# a+=500
+# print(a)
 
 
